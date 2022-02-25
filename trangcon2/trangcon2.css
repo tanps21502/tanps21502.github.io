@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header, nav{
+    /* canh giữa cách lề mỗi bên 10% */
+    margin: 0px 0%;
+}
+nav{
+    background: rgb(212, 42, 42); /*tô màu cho menu cha*/
+    border-radius: 0px; /* bo góc */
+}
+nav ul{
+    display: flex;
+}
+nav> ul li{
+    list-style: none; /* bỏ dấu chấm mặc định của li */
+    /* kẻ đường bên trái và bên phải của li */
+    border-right: 0px solid #ccc;
+    border-left:0px solid rgb(255, 255, 255);
+}
+nav> ul li a{
+    display: block;
+    padding: 0 28px;
+    line-height: 70px;
+    color: #fdfdfd;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-right: 7px;
+}
+nav ul li:first-child {
+    border-left: none; /* bỏ đường kè trái của phần tử đầu tiên */
+    border-bottom: 0px;
+}
+nav> ul li:first-child a{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+/* Khi hover đến li, tô màu cho thẻ a */
+nav ul li:hover>a{
+    background: red;
+    opacity: .7;
+    color: yellow;
+}
+/*menu con*/
+/*Ẩn các menu con cấp 1,2,3*/
+nav li ul{
+    display: none;
+    min-width: 350px;
+    position: absolute;
+}
+h1{
+    border-bottom: 0px solid #ccc;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+}
+h2{
+        border-bottom: 1px solid #ccc;
+        background: rgb(58, 55, 55);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ffffff;
+        border-radius: 60px;
+        font-size: 35px;
+}
+.socials-share {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.socials-share a {
+    padding: 4px 30px;
+    color: #fff;
+    line-height: 2em;
+    text-decoration: none;
+    border-radius: 2px;
+    white-space: nowrap;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.socials-share span.fa {
+    margin-right: 3px;
+}
+
+.bg-facebook {
+    background: #3a5899;
+}
+
+.bg-facebook:hover, .bg-facebook:focus {
+    background: #1d418d;
+}
+
+.bg-twitter {
+    background: #00acee;
+}
+
+.bg-twitter:hover, .bg-twitter:focus {
+    background: #0b93c7;
+}
+
+.bg-google-plus {
+    background: #db4437;
+}
+
+.bg-google-plus:hover, .bg-google-plus:focus {
+    background: #bb2a1d;
+}
+
+.bg-pinterest {
+    background: #cb1e26;
+}
+
+.bg-pinterest:hover, .bg-pinterest:focus {
+    background: #ae0e15;
+}
+
+.bg-email {
+    background: #dd5348;
+}
+
+.bg-email:hover, .bg-email:focus {
+    background: #ce3f34;

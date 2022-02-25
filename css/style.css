@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header, nav{
+    /* canh giữa cách lề mỗi bên 10% */
+    margin: 0px 0%;
+}
+nav{
+    background: rgb(212, 42, 42); /*tô màu cho menu cha*/
+    border-radius: 0px; /* bo góc */
+}
+nav ul{
+    display: flex;
+}
+nav> ul li{
+    list-style: none; /* bỏ dấu chấm mặc định của li */
+    /* kẻ đường bên trái và bên phải của li */
+    border-right: 0px solid #ccc;
+    border-left:0px solid rgb(255, 255, 255);
+}
+nav> ul li a{
+    display: block;
+    padding: 0 28px;
+    line-height: 70px;
+    color: #fdfdfd;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-right: 7px;
+}
+nav ul li:first-child {
+    border-left: none; /* bỏ đường kè trái của phần tử đầu tiên */
+    border-bottom: 0px;
+}
+nav> ul li:first-child a{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+/* Khi hover đến li, tô màu cho thẻ a */
+nav ul li:hover>a{
+    background: red;
+    opacity: .7;
+    color: yellow;
+}
+/*menu con*/
+/*Ẩn các menu con cấp 1,2,3*/
+nav li ul{
+    display: none;
+    min-width: 350px;
+    position: absolute;
+}
+nav li>ul li{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: #999;
+    text-align: left;
+}
+nav li>ul li:first-child a{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+nav li>ul li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+nav li>ul li:last-child a{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/*khi hover thì hiện menu con*/
+nav  li:hover > ul{
+    display:  block;
+}
+footer{
+    margin: 0px 0%;
+}
+.content{
+    width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 300px 300px; 
+}
+.item img{
+    width: 180px;
+    height: 180px;
+    border-radius: 2px;
+}
+h2,h3{
+    position: absolute
+    top : 80px;
+    left :10px;
+}
+.menu{
+    font-variant: small-caps;
+    font-size: 30px;
+    border-bottom: 10px solid rgb(255, 255, 255);
+    text-align: right;
+    border-radius: 10px;
+    font-style: inherit;
+    
+}
+h1{
+    border-bottom: 2px solid #ccc;
+    background: rgb(78, 76, 76);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fdfdfd;
+    border-radius: 60px;
+}
+div>p>{
+    font-size: 20px;
+}
+div>p>a{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+div h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div p a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    color: rgb(0, 0, 0);
+}
+.csw-media {
+    overflow: hidden;
+    display: inline-block;
+  }
+  .csw-media img {
+    transition: 0.8s;
+  }
+  .csw-media:hover img {
+    transform: scale(1.2, 1.2);
+  }
+div center h2{
+    margin-right: 700px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    
+}
+h2 b{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-right: 5px;
+}
+.socials-share {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.socials-share a {
+    padding: 4px 30px;
+    color: #fff;
+    line-height: 2em;
+    text-decoration: none;
+    border-radius: 2px;
+    white-space: nowrap;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.socials-share span.fa {
+    margin-right: 3px;
+}
+
+.bg-facebook {
+    background: #3a5899;
+}
+
+.bg-facebook:hover, .bg-facebook:focus {
+    background: #1d418d;
+}
+
+.bg-twitter {
+    background: #00acee;
+}
+
+.bg-twitter:hover, .bg-twitter:focus {
+    background: #0b93c7;
+}
+
+.bg-google-plus {
+    background: #db4437;
+}
+
+.bg-google-plus:hover, .bg-google-plus:focus {
+    background: #bb2a1d;
+}
+
+.bg-pinterest {
+    background: #cb1e26;
+}
+
+.bg-pinterest:hover, .bg-pinterest:focus {
+    background: #ae0e15;
+}
+
+.bg-email {
+    background: #dd5348;
+}
+
+.bg-email:hover, .bg-email:focus {
+    background: #ce3f34;
+}
+input[type="text"] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline:none;
+    padding: 12px 14px;
+  }
+  input[type="text"]:focus{
+    width:500px; 
+}
+input[type="text"] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline:none;
+    padding: 12px 14px;
+
+    transition:0.5s ease-in-out;
+  }
+  input[type="text"]:focus{
+    width:600px; 
+    background-color:lightpink;
+}
